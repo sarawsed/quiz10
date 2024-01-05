@@ -8,9 +8,15 @@ if (weight && height) {
     alert("you are normal");
   } else if (BMI >= 25 && BMI <= 29.9) {
     alert("you are overweight");
-  } else {
+  } else if (BMI >= 30) {
     alert("you are obese");
   }
-} else {
-  alert("Please Enter Weight & Height Properly");
+  //If they entered letters and other characters instead of numbers:
+  else {
+    alert("Please Enter Weight & Height Properly!");
+  }
+}
+//If they did not enter weight and height:
+else {
+  alert("Please Enter Weight & Height :)");
 }
